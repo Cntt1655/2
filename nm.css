@@ -1,0 +1,101 @@
+@charset "UTF-8";
+html,body{scroll-behavior:smooth;}  
+body {
+	width:100%;
+	margin:0 auto;
+	min-height: 300px;
+	background-color: #fff;
+	font-family:Arial,Verdana,sans-serif,'Microsoft Yahei';
+	font-size: 16px;
+	color:#555;
+}
+ul,li {list-style: none;}
+.clearfix {clear:both;}
+img {max-width:100%;}
+body a {outline: none;}
+div,a,span,p,ul,li{padding:0;margin:0;}
+td,th{ border:1px solid #bbb;}
+*{word-wrap:break-word;}
+.main1000{width:1000px;margin:0 auto;}
+.main1500{width:1500px;margin:0 auto;}
+.main1700{width:1700px;margin:0 auto;}
+@media (min-width:640px ) {
+	.pc_hidden{display: none;}
+	.img.pc_hidden{display: none;}
+	img.pc_hidden{display: none;}
+}
+@media (max-width:640px ) {
+	.m_hidden{display: none;}
+	.img.m_hidden{display: none;}
+	img.m_hidden{display: none;}
+}
+@media (min-width:640px ) and (max-width: 1000px) {
+	.pb_hidden{display: none;}
+}
+@media (max-width: 640px) {
+	.q_banner .swiper_button {display: none;}
+}
+.q_form_div:after{content:"."; display:block; height:0; visibility:hidden; clear:both;font-size: 0;}
+.q_form_div .q_form_input{width:calc(100% - 110px);float:left;padding:4px 20px;margin:0 auto;}
+.q_form_div .q_form_button{width:100px;float:right;margin:0 auto;line-height: 34px;}
+.div_main{width:100%;margin:0 auto;position: relative;}
+.div_main:after{content:"."; display:block; height:0; visibility:hidden; clear:both;font-size: 0;}
+
+.div_more a{padding:8px 20px;border-radius: 25px;vertical-align: middle;font-size: 0;
+	outline: none;border:1px solid #eee;background-color:var(--white);display: inline-block;
+}
+
+.div_more a span{display: inline-block;font-size: 13px;text-transform:uppercase;line-height: 25px;font-weight: 100;color:var(--color-main2);}
+.div_more a img{display: inline-block;margin-left: 6px;height:25px;}
+.div_more a img.default{display: inline-block;}
+.div_more a img.on{display: none;}
+.div_more a:hover{background-color: var(--color-main);border:1px solid var(--color-main);}
+.div_more a:hover span{color: var(--white);}
+.div_more a:hover img.default{display: none;}
+.div_more a:hover img.on{display: inline-block;}
+
+.q_main{width:100%;margin:0 auto;font-size: 16px;color:#555;line-height: 1.8;padding:60px 0 100px;min-height: 450px;}
+.main_div{width:100%;margin:0 auto;position: relative;}
+.main_div:after{content:"."; display:block; height:0; visibility:hidden; clear:both;font-size: 0;}
+/* ncontact start! */
+.ntel{padding:20px 0 0;width:100%;position: relative;}
+.ntel:after{content:"."; display:block; height:0; visibility:hidden; clear:both;font-size: 0;}
+.ntel_txt{width:49.8%;float:left;}
+.ntel_txt .about_icon span{text-transform:uppercase;}
+
+.ntel_list{margin:20px auto 0;}
+.ntel_item{width:48.7%;float:left;margin:20px 2.6% 0 0;padding:30px 20px;background-color: #f3f0ec;border-radius: 20px;}
+.ntel_item:nth-of-type(2n){margin:20px 0 0 0;}
+.ntel_item_main{width:100%;position: relative;}
+
+.ntel_item_icon{width:48px;position: absolute;top:-5px;right:0;z-index: 2;}
+
+.ntel_item_disc{width:8px;height:8px;background-color: var(--color-main);border-radius: 50%;}
+.ntel_item_h{font-size: 16px;color:var(--color-main2);line-height: 30px;}
+.ntel_item_p{margin:5px auto 0;font-size: 14px;color:#666;line-height: 20px;height:60px;
+	display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 3;overflow: hidden;
+}
+.ntel_item_tel{margin:5px auto 0;font-size:30px;color:var(--color-main);font-weight: 700;line-height: 60px;height:60px; }
+
+.ntel_img{width:47.5%;position: absolute;right:0;bottom:0;}
+.ntel_img img{width:100%;border-radius: 20px;}
+
+.nform{background:#f3f0ec url("https://www.bingxueglobal.com/style/css/../images/nform_bg.jpg") no-repeat center top;padding:100px 0 200px;}
+
+.nformes{margin:65px auto 0;}
+.nform_div{width:100%;margin:25px auto 0;}
+.nform_div:after{content:"."; display:block; height:0; visibility:hidden; clear:both;font-size: 0;}
+.nform_block{width:23.5%;float:left;margin:0 2% 0 0;}
+.nform_block:nth-of-type(4n){margin:0;}
+.nform_input{padding:15px 25px;border-radius: 10px;border:1px solid var(--white);font-size: 16px;color:var(--color-main);line-height: 25px;
+	display: block;width:100%;outline: none;background-color: var(--white);-webkit-appearance: none;
+}
+.nform_input:focus{border:1px solid var(--color-main);}
+
+input.nform_input::-webkit-input-placeholder {color: #999;font-size: 16px;}
+input.nform_input::-moz-placeholder {color: #999;font-size: 16px;}
+input.nform_input::-ms-input-placeholder {color: #999;font-size: 16px;}
+
+.nform_input.nform_button{background-color: var(--color-main);color: var(--white);font-size: 24px;font-weight: 700;line-height: 35px;}
+.nform_input.nform_button:hover{background-color: #cf6107;}
+/* ncontact end! */
